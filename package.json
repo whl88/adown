@@ -3,13 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "electron:build": "vue-cli-service electron:build",
-    "electron:serve": "vue-cli-service electron:serve",
-    "postinstall": "electron-builder install-app-deps",
-    "postuninstall": "electron-builder install-app-deps"
+    "build": "vue-cli-service electron:build",
+    "serve": "vue-cli-service electron:serve"
   },
   "main": "background.js",
   "description": "a download tool based on aria2",
@@ -32,20 +27,6 @@
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "vue-cli-plugin-electron-builder": "~2.1.1"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "@babel/eslint-parser"
-    },
-    "rules": {}
   },
   "browserslist": [
     "> 1%",
